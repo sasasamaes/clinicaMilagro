@@ -2,14 +2,16 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Contactenos - Clínica Médica Corazón de Jesús</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-		<img src="">
-		<h2>Clínica Médica Corazón de Jesús</h2>
+		<figure>
+			<img src="">
+		</figure>
+		<h2 class="titulo">Clínica Médica Corazón de Jesús</h2>
 		<nav>
 			<a href="index.html">Inicio</a>
 			<a href="quienes-somos.html">Quienes Somos</a>
@@ -17,7 +19,16 @@
 			<a href="contactenos.html">Contactenos</a>
 		</nav>
 	</header>
-	
+	<form id="formulario" method="post" action="">  
+	  <fieldset>
+	    <label for="nombre">Nombre</label>
+	    <input type="text" name="nombre" id="nombre" class="localStorage" placeholder="Tu nombre" required/>
+	    <label for="correo">Email</label>
+	    <input type="email" name="correo" id="correo" class="localStorage" placeholder="Tu correo" required/>
+	    <label for="comentario">Comentario</label>
+	    <textarea id="comentario" name="comentario" class="localStorage"></textarea>
+	    <input type="submit" value="Enviar" /> </fieldset>
+	</form>  
 	
 	<footer>
 		<aside>
